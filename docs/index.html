@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/css.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
 </head>
 
 <body>
     <div class="Geral">
         <div class="container">
             <div class="box1">
+                <header class="header">
+                    <h2>Sistema de gestão de pacientes</h2>
+                </header>
+                <hr>
+                <div>
+                    <ul class="nav">
+                        <li><a href="#identificadores">Identificadores</a></li>
+                        <li><a href="#nomes">Nome</a></li>
+                        <li><a href="#endereços">Endereços</a></li>
+                        <li><a href="#contatos">Contatos eletrônicos</a></li>
+                    </ul>
+                </div>
+                <p>Pesquisar paciente</p>
                 <input type="search" name="busca">
                 <input type="button" name="busca" value="Pesquisar">
             </div>
@@ -18,8 +34,8 @@
             </div>
         </div>
 
-        <!--Indentificadores-->
-        <div class="container1">
+        <!--Identificadores-->
+        <div class="container1" id="identificadores">
             <div class="box">
                 <h3>Identificador</h3>
                 <div class="colunn">
@@ -191,7 +207,60 @@
                 <input type="date" name="datafinal">
             </div>
         </div>
+        <div>
+            <div class="container">
+                <div class="box1">
+                    <br>
+                    <div class="box">
+                        <label class="label">Nome:</label>
+                        <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
+                    </div>
+                    <br>
+                    <div class="box">
+                        <label class="label">Sobrenome:</label>
+                        <input type="text" id="sobrenome" class="input" placeholder="Insira o sobrenome aqui" size="25">
+                    </div>
+                </div>
+                <div class="box1">
+                    <br>
+                    <div class="box">
+                        <label class="label">Título:</label>
+                        <input type="text" id="titulo" class="input" placeholder="Insira o título aqui" size="25">
+                    </div>
+                    <br>
+                    <div class="box">
+                        <label class="label">Sufixo:</label>
+                        <input type="text" id="sufixo" class="input" placeholder="Insira o sufixo aqui" size="25">
+                    </div>
+                </div>
+                <div class="box1">
+                    <br>
+                    <label class="label">Uso:</label>
+                    <select>
+                        <option value="1">Relatório - R</option>
+                        <option value="2">Nome de recém-nascido - N</option>
+                        <option value="3">Nome profissional ou comercial - C</option>
+                        <option value="4">Nome de solteiro, nome de nascimento ou nome original - S</option>
+                        <option value="5">Nome registrado (nome legal) - L</option>
+                        <option value="8">Outro nome (alias) - O</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--Dados demograficos-->
+
+            <!--Endereço-->
+
+            <!--Comunicações eletronicas-->
+
+            <!--Vinculos-->
+
+        </div>
+
     </div>
+    <footer class="footer">
+        http://sistemagp.com.br
+    </footer>
 </body>
 
 </html>
