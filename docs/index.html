@@ -21,10 +21,10 @@
         <!--Indentificadores-->
         <div class="container1">
             <div class="box">
-                <h2>Identificador</h2>
+                <h3>Identificador</h3>
                 <div class="colunn">
                     <div class="field">
-                        <h4>Tipo de identificador</h4>
+                        </label>Tipo de identificador</label>
                         <select name="identificador" form="identificadores">
                             <option value="">Identificadores</option>
                             <option value="Identidade">Identidade</option>
@@ -33,21 +33,21 @@
                         </select>    
                     </div>
                     <div class="field">
-                        <h4>Designação</h4>
+                        <label>Designação</label>
                         <input type="text" name="designacao">
                     </div>
                     <div class="field">
-                        <h4>Emissor</h4>
+                        <label>Emissor</label>
                         <input type="text" name="emissor">
                     </div>
                 </div>
                 <div class="colunn">
                     <div class="field">
-                        <h4>Área Geográfica</h4>
+                        <label>Área Geográfica</label>
                         <input type="text" name="areageo">
                     </div>
                     <div>
-                        <h4>Data</h4>
+                        <label>Data</label>
                         <input type="date" name="data">
                     </div>
                 </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="box">
                 <div>
-                    <h4>Tipo de Certidão</h4>
+                    <label>Tipo de Certidão</label>
                     <select name="certidao" form="certidao">
                         <option value="nascimento">Nascimento</option>
                         <option value="casamento">Casamento</option>
@@ -63,19 +63,19 @@
                     </select>
                 </div>
                 <div>
-                    <h4>Nome do Cartório</h4>
+                    <label>Nome do Cartório</label>
                     <input type="text" name="cartorio">
                 </div>
                 <div>
-                    <h4>Livro</h4>
+                    <label>Livro</label>
                     <input type="text" name="livro">
                 </div>
                 <div>
-                    <h4>Folha</h4>
+                    <label>Folha</label>
                     <input type="text" name="folha">
                 </div>
                 <div>
-                    <h4>Termo</h4>
+                    <label>Termo</label>
                     <input type="text" name="termo">
                 </div>
 
@@ -83,11 +83,11 @@
             <div class="box">
                 <h3>Carteira de Trabalho</h3>
                 <div>
-                    <h4>Série</h4>
+                    <label>Série</label>
                     <input type="text" name="serie">
                 </div>
                 <div>
-                    <h4>Estado</h4>
+                    <label>Estado</label>
                     <input type="text" name="estado">
                 </div>
 
@@ -95,11 +95,11 @@
             <div class="box">
                 <h3>Título de Eleitor</h3>
                 <div>
-                    <h4>Seção</h4>
+                    <label>Seção</label>
                     <input type="text" name="secao">
                 </div>
                 <div>
-                    <h4>Zona</h4>
+                    <label>Zona</label>
                     <input type="text" name="zona">
                 </div>
             </div>
@@ -107,13 +107,90 @@
         <!--Nomes-->
 
         <!--Dados demograficos-->
-
+        
         <!--Endereço-->
 
         <!--Comunicações eletronicas-->
-
+        <div class="container">
+            <h3>Comunicações Eletrônicas</h3>
+            <div>
+                <label>Meio</label>
+                <select name="meio" form="meio">
+                    <option value="telefone"><img>Telefone</option>
+                    <option value="celular"><img>Celular</option>
+                    <option value="fax"><img>Faz</option>
+                    <option value="pager"><img>Pager</option>
+                    <option value="email"><img>Email</option>
+                    <option value="url"><img>Url</option>
+                    <option value="outro"><img>Outro</option>
+                </select>
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="text" name="telefone">
+            </div>
+            <div>
+                <label>Preferência</label>
+                <select name="preferencia" form="preferencia">
+                        <option value="comercial">Horário Comercial</option>
+                        <option value="dia">Durante o Dia</option>
+                        <option value="fds">Final de Semana</option>
+                        <option value="qualquer">Qualquer Hora</option>
+                        <option value="noite">Período Noturno</option>
+                    </select>
+            </div>
+            <div>
+                <label>Utilização</label>
+                <select name="utilizacao" form="utilizacao">
+                    <option value="comercial">Comercial</option>
+                    <option value="pessoal">Pessoal</option>
+                    <option value="comercialpessoal">Comercial ou Pessoal</option>
+                </select>
+            </div>
+        </div>
         <!--Vinculos-->
-
+        <div class="container">
+            <h3>Vínculos</h3>
+            <div>
+                <label>Identificador</label>
+                <input type="text" name="identificador">
+            </div>
+            <div>
+                <label>Relacionamento</label>
+                <select>
+                    <option value=""selected>Avó materna</option>
+                    <option value="">Avô materno</option>
+                    <option value="">Cônjuge/companheiro(a)</option>
+                    <option value="">Irmão</option>
+                    <option value="">Irmã</option>
+                    <option value="">Meio-irmão</option>
+                    <option value="">Meio-irmã</option>
+                    <option value="">Irmãos</option>
+                    <option value="">Criança</option>
+                    <option value="">Filha</option>
+                    <option value="">Avó paterna</option>
+                    <option value="">Avô paterno</option>
+                    <option value="">Tio materno</option>
+                    <option value="">Tio paterno</option>
+                    <option value="">Tia paterna</option>
+                    <option value="">Recém-nascido</option>
+                    <option value="">Pais</option>
+                    <option value="">Mãe adotiva</option>
+                    <option value="">Pai adotivo</option>
+                    <option value="">Responsável</option>
+                    <option value="">Coabitante</option>
+                    <option value="">Tia materna</option>
+                    </select>
+            </div>
+            <div>
+                <label>Data Inicial</label>
+                <input type="date" name="datainicial">
+            </div>
+            <div>
+                <label>Data Final</label>
+                <input type="date" name="datafinal">
+            </div>
+        </div>
     </div>
 </body>
 
