@@ -21,26 +21,87 @@
         <!--Indentificadores-->
         <div class="container1">
             <div class="box">
+                <h2>Identificador</h2>
                 <div class="colunn">
                     <div class="field">
-                        <h2>Tipo de identificador</h2>
-                        <input type=""
+                        <h4>Tipo de identificador</h4>
+                        <select name="identificador" form="identificadores">
+                            <option value="">Identificadores</option>
+                            <option value="Identidade">Identidade</option>
+                            <option value="CPF">CPF</option>
+                            <option value="CNH">CNH</option>
+                        </select>    
                     </div>
-
+                    <div class="field">
+                        <h4>Designação</h4>
+                        <input type="text" name="designacao">
+                    </div>
+                    <div class="field">
+                        <h4>Emissor</h4>
+                        <input type="text" name="emissor">
+                    </div>
+                </div>
+                <div class="colunn">
+                    <div class="field">
+                        <h4>Área Geográfica</h4>
+                        <input type="text" name="areageo">
+                    </div>
+                    <div>
+                        <h4>Data</h4>
+                        <input type="date" name="data">
+                    </div>
                 </div>
 
             </div>
             <div class="box">
-                
+                <div>
+                    <h4>Tipo de Certidão</h4>
+                    <select name="certidao" form="certidao">
+                        <option value="nascimento">Nascimento</option>
+                        <option value="casamento">Casamento</option>
+                        <option value="Divorcio">Divórcio</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>Nome do Cartório</h4>
+                    <input type="text" name="cartorio">
+                </div>
+                <div>
+                    <h4>Livro</h4>
+                    <input type="text" name="livro">
+                </div>
+                <div>
+                    <h4>Folha</h4>
+                    <input type="text" name="folha">
+                </div>
+                <div>
+                    <h4>Termo</h4>
+                    <input type="text" name="termo">
+                </div>
 
             </div>
             <div class="box">
-                
+                <h3>Carteira de Trabalho</h3>
+                <div>
+                    <h4>Série</h4>
+                    <input type="text" name="serie">
+                </div>
+                <div>
+                    <h4>Estado</h4>
+                    <input type="text" name="estado">
+                </div>
 
             </div>
             <div class="box">
-                
-
+                <h3>Título de Eleitor</h3>
+                <div>
+                    <h4>Seção</h4>
+                    <input type="text" name="secao">
+                </div>
+                <div>
+                    <h4>Zona</h4>
+                    <input type="text" name="zona">
+                </div>
             </div>
         </div>
         <!--Nomes-->
