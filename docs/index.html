@@ -37,7 +37,7 @@
         <!--Identificadores-->
         <div class="container1" id="identificadores">
             <div class="box">
-                <h3>Identificador</h3>
+                <h2>Identificador</h2>
                 <div class="colunn">
                     <div class="field">
                         </label>Tipo de identificador</label>
@@ -123,7 +123,7 @@
         
         <!--Nomes-->
         <div class="container">
-            <h3>Nomes</h3>
+            <h2>Nomes</h2>
                 <div class="box1">
                     <div class="box">
                         <label class="label">Nome:</label>
@@ -162,6 +162,7 @@
         </div>
         <!--Dados demograficos-->
         <div class="container">
+            <h2>Dados Demográficos</h2>
                 <div>
                     <div>
                         <label>Mãe</label>
@@ -331,10 +332,113 @@
             </div>
         </div>
         <!--Endereço-->
-
+        <div class="container">
+            <h2>Endereços</h2>
+            <div>
+                <div>
+                    <h3>Tipo de endereço</h3>
+                    <select name="tipo">
+                            <option value="1">Comercial</option>
+                            <option value="2">Correio ou postal</option>
+                            <option value="3">Acomodação temporária</option>
+                            <option value="4" selected>Residencial</option>
+                            <option value="8">Sem endereço fixo</option>
+                            <option value="9">Desconhecido/não declarado</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Data inicial</h3>
+                    <input type="date" name="datainicial">
+                </div>
+                <div>
+                    <h3>Inicador de Acurácia</h3>
+                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                </div>
+                <div>
+                    <h3>Data final</h3>
+                    <input type="date" name="datafinal">
+                </div>
+                <div>
+                    <h3>Inicador de Acurácia</h3>
+                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                </div>
+                <div>
+                    <h3>País</h3>
+                    <input type="checkbox"><label>Brasil</label><input type="checkbox"><label>Outro</label>
+                    <div>
+                        <div>
+                            <h3>Estado de nascimento</h3>
+                            <select onchange="">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3>Estado (municícios)</h3>
+                            <select>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div>
+                    <label>País</label><select></select><br>
+                    <label>Estado</label><select></select><br>
+                    <label>Municícios</label><select></select>
+                </div>
+                <div>
+                    <h3>Caixa Postal</h3>
+                    <input type="text">
+                </div>
+                <div>
+                    <h3>CEP</h3>
+                    <input type="text"><br>
+                    <label>Exemplo: 12345-678.</label>
+                </div>
+                <div>
+                    <h3>Bairro</h3>
+                    <input type="text">
+                </div>
+                <div>
+                    <h3>Distrito</h3>
+                    <input type="text">
+                </div>
+                <div>
+                    <h3>Endereço</h3>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
         <!--Comunicações eletronicas-->
         <div class="container">
-            <h3>Comunicações Eletrônicas</h3>
+            <h2>Comunicações Eletrônicas</h2>
             <div>
                 <label>Meio</label>
                 <select name="meio" form="meio">
@@ -372,7 +476,7 @@
         </div>
         <!--Vinculos-->
         <div class="container">
-            <h3>Vínculos</h3>
+            <h2>Vínculos</h2>
             <div>
                 <label>Identificador</label>
                 <input type="text" name="identificador">
