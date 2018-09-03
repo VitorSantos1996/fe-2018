@@ -125,7 +125,6 @@
         <div class="container">
             <h3>Nomes</h3>
                 <div class="box1">
-                    <br>
                     <div class="box">
                         <label class="label">Nome:</label>
                         <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
@@ -162,7 +161,175 @@
                 </div>
         </div>
         <!--Dados demograficos-->
-        
+        <div class="container">
+                <div>
+                    <div>
+                        <label>Mãe</label>
+                        <input type="text" name="mae">
+                    </div>
+                    <div>
+                        <label>Pai</label>
+                        <input type="text" name="pai">
+                    </div>
+                    <div>
+                        <h3>Situação Familiar (convive com)</h3>
+                        <div>
+                            <input type="checkbox"><label>Companheiro(a) e Filho(s)</label>
+                            <br>
+                            <input type="checkbox"><label>Companheiro(a) com laços conjugais e sem filhos</label>
+                            <br>
+                            <input type="checkbox"><label>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</label>
+                            <br>
+                            <input type="checkbox"><label>Familiar(es) sem Companheiro(a)</label>
+                            <br>
+                            <input type="checkbox"><label>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</label>
+                            <br>
+                            <input type="checkbox"><label>Vive só</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Data de Nascimento</h3>
+                            <input type="date" name="datanascimento">
+                        </div>
+                        <div>
+                            <h3>Indicador de acurácia</h3>
+                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                        </div>
+                        <div>
+                            <h3>Seguimento</h3>
+                            <input type="checkbox" name=""><label>Data precisa de seguimento</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Óbito</h3>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <h3>Indicador de acurácia</h3>
+                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                        </div>
+                        <div>
+                            <h3>Fonte de notificação</h3>
+                            <input type="radio"><label>Cartório</label><input type="radio"><label>Prestador de assistência à saúde</label><input type="radio"><label>Parente</label><input type="radio"><label>Outro</label><input type="radio"><label>Desconhecido</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Raça/cor</h3>
+                        <input type="checkbox"><label>Branca</label>
+                        <input type="checkbox"><label>Preta</label>
+                        <input type="checkbox"><label>Parda</label>
+                        <input type="checkbox"><label>Amarela</label>
+                        <input type="checkbox"><label>Indígena</label>
+                    </div>
+                </div>
+            <div>
+                <h3>Sexo</h3>
+                <input type="radio"><label>Masculino (M)</label>
+                <input type="radio"><label>Feminino (F)</label>
+                <input type="radio"><label>Intersexoou Indeterminado (I)</label>
+                <input type="radio"><label>Não declarado (U)</label>
+            </div>
+            <div>
+                <h3>Situação Familiar</h3>
+                <select>
+                        <option value="1">Companheiro(a) e filho(s)</option>
+                        <option value="2">Companheiro(a) com laços conjugais e sem filhos</option>
+                        <option value="3">Companheiro(a), com filho(s) e/ou outro(s) familiar(es)</option>
+                        <option value="4">Familiar(es) sem companheiro(a)</option>
+                        <option value="5">Outra(s) pessoa(s), sem laços consanguíneos e/ou laços conjugais</option>
+                        <option value="8">Vive só</option>
+                </select>
+            </div>
+            <div>
+                <h3>Nacionalidade</h3>
+                <input type="checkbox"><label>Brasileiro</label><input type="checkbox"><label>Estrangeiro</label>
+                <div>
+                    <div>
+                        <h3>Estado de nascimento</h3>
+                        <select onchange="">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="PR">Paraná</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Estado (municícios)</h3>
+                        <select>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>País de nascimento</h3>
+                        <select id="paises">
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Data de entrada no Brasil</h3>
+                        <input type="date">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Pluraridade de nascimentos</h3>
+                <select>
+                            <option value="1">Único</option>
+                            <option value="2">Gêmeos</option>
+                            <option value="3">Trigêmeos</option>
+                            <option value="4">Quádruplos</option>
+                            <option value="5">Quíntuplos</option>
+                            <option value="6">Sêxtuplos</option>
+                            <option value="7">Outros</option>
+                            <option value="9" selected>Não declarado</option>
+                </select>
+            </div>
+            <div>
+                <h3>Ordem de Nascimento</h3>
+                <select>
+                        <option value="1">único ou primeiro</option>
+                        <option value="2">segundo</option>
+                        <option value="3">terceiro</option>
+                        <option value="4">quarto</option>
+                        <option value="5">quinto</option>
+                        <option value="6">sexto</option>
+                        <option value="7">outros</option>
+                        <option value="9" selected>não declarado</option>
+                </select>
+            </div>
+            <div>
+                <h3>Comentário de identificação</h3>
+                <textarea placeholder="exemplo: dois pacientes com o mesmo nome. Não é o mesmo que 123456"></textarea>
+            </div>
+        </div>
         <!--Endereço-->
 
         <!--Comunicações eletronicas-->
