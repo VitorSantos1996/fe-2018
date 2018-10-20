@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/css.css"/>
+    <link rel="stylesheet" href="../css/css.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/css.css">
@@ -27,7 +27,9 @@
                 </div>
                 <p>Pesquisar paciente</p>
                 <input type="search" name="busca">
-                <input type="button" name="busca" value="Pesquisar">
+                <button type="button" name="busca" class="btn">
+                <img src="../img/11362_256x256.png" height="10px" width="10px"/>
+                </button>
             </div>
             <div class="box2"><br>
                 <input type="button" name="criar" value="Criar novo Cadastro">
@@ -46,7 +48,7 @@
                             <option value="Identidade">Identidade</option>
                             <option value="CPF">CPF</option>
                             <option value="CNH">CNH</option>
-                        </select>    
+                        </select>
                     </div>
                     <div class="field">
                         <label>Designação</label>
@@ -120,37 +122,37 @@
                 </div>
             </div>
         </div>
-        
+
         <!--Nomes-->
         <div class="container">
             <h2>Nomes</h2>
-                <div class="box1">
-                    <div class="box">
-                        <label class="label">Nome:</label>
-                        <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
-                    </div>
-                    <br>
-                    <div class="box">
-                        <label class="label">Sobrenome:</label>
-                        <input type="text" id="sobrenome" class="input" placeholder="Insira o sobrenome aqui" size="25">
-                    </div>
+            <div class="box1">
+                <div class="box">
+                    <label class="label">Nome:</label>
+                    <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
                 </div>
-                <div class="box1">
-                    <br>
-                    <div class="box">
-                        <label class="label">Título:</label>
-                        <input type="text" id="titulo" class="input" placeholder="Insira o título aqui" size="25">
-                    </div>
-                    <br>
-                    <div class="box">
-                        <label class="label">Sufixo:</label>
-                        <input type="text" id="sufixo" class="input" placeholder="Insira o sufixo aqui" size="25">
-                    </div>
+                <br>
+                <div class="box">
+                    <label class="label">Sobrenome:</label>
+                    <input type="text" id="sobrenome" class="input" placeholder="Insira o sobrenome aqui" size="25">
                 </div>
-                <div class="box1">
-                    <br>
-                    <label class="label">Uso:</label>
-                    <select>
+            </div>
+            <div class="box1">
+                <br>
+                <div class="box">
+                    <label class="label">Título:</label>
+                    <input type="text" id="titulo" class="input" placeholder="Insira o título aqui" size="25">
+                </div>
+                <br>
+                <div class="box">
+                    <label class="label">Sufixo:</label>
+                    <input type="text" id="sufixo" class="input" placeholder="Insira o sufixo aqui" size="25">
+                </div>
+            </div>
+            <div class="box1">
+                <br>
+                <label class="label">Uso:</label>
+                <select>
                         <option value="1">Relatório - R</option>
                         <option value="2">Nome de recém-nascido - N</option>
                         <option value="3">Nome profissional ou comercial - C</option>
@@ -158,78 +160,78 @@
                         <option value="5">Nome registrado (nome legal) - L</option>
                         <option value="8">Outro nome (alias) - O</option>
                     </select>
-                </div>
+            </div>
         </div>
         <!--Dados demograficos-->
         <div class="container">
             <h2>Dados Demográficos</h2>
+            <div>
                 <div>
+                    <label>Mãe</label>
+                    <input type="text" name="mae">
+                </div>
+                <div>
+                    <label>Pai</label>
+                    <input type="text" name="pai">
+                </div>
+                <div>
+                    <h3>Situação Familiar (convive com)</h3>
                     <div>
-                        <label>Mãe</label>
-                        <input type="text" name="mae">
-                    </div>
-                    <div>
-                        <label>Pai</label>
-                        <input type="text" name="pai">
-                    </div>
-                    <div>
-                        <h3>Situação Familiar (convive com)</h3>
-                        <div>
-                            <input type="checkbox"><label>Companheiro(a) e Filho(s)</label>
-                            <br>
-                            <input type="checkbox"><label>Companheiro(a) com laços conjugais e sem filhos</label>
-                            <br>
-                            <input type="checkbox"><label>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</label>
-                            <br>
-                            <input type="checkbox"><label>Familiar(es) sem Companheiro(a)</label>
-                            <br>
-                            <input type="checkbox"><label>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</label>
-                            <br>
-                            <input type="checkbox"><label>Vive só</label>
-                            <br>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h3>Data de Nascimento</h3>
-                            <input type="date" name="datanascimento">
-                        </div>
-                        <div>
-                            <h3>Indicador de acurácia</h3>
-                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                        </div>
-                        <div>
-                            <h3>Seguimento</h3>
-                            <input type="checkbox" name=""><label>Data precisa de seguimento</label>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h3>Óbito</h3>
-                            <input type="date">
-                        </div>
-                        <div>
-                            <h3>Indicador de acurácia</h3>
-                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                        </div>
-                        <div>
-                            <h3>Fonte de notificação</h3>
-                            <input type="radio"><label>Cartório</label><input type="radio"><label>Prestador de assistência à saúde</label><input type="radio"><label>Parente</label><input type="radio"><label>Outro</label><input type="radio"><label>Desconhecido</label>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Raça/cor</h3>
-                        <input type="checkbox"><label>Branca</label>
-                        <input type="checkbox"><label>Preta</label>
-                        <input type="checkbox"><label>Parda</label>
-                        <input type="checkbox"><label>Amarela</label>
-                        <input type="checkbox"><label>Indígena</label>
+                        <input type="checkbox"><label>Companheiro(a) e Filho(s)</label>
+                        <br>
+                        <input type="checkbox"><label>Companheiro(a) com laços conjugais e sem filhos</label>
+                        <br>
+                        <input type="checkbox"><label>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</label>
+                        <br>
+                        <input type="checkbox"><label>Familiar(es) sem Companheiro(a)</label>
+                        <br>
+                        <input type="checkbox"><label>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</label>
+                        <br>
+                        <input type="checkbox"><label>Vive só</label>
+                        <br>
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <h3>Data de Nascimento</h3>
+                        <input type="date" name="datanascimento">
+                    </div>
+                    <div>
+                        <h3>Indicador de acurácia</h3>
+                        <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                    </div>
+                    <div>
+                        <h3>Seguimento</h3>
+                        <input type="checkbox" name=""><label>Data precisa de seguimento</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Óbito</h3>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <h3>Indicador de acurácia</h3>
+                        <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                    </div>
+                    <div>
+                        <h3>Fonte de notificação</h3>
+                        <input type="radio"><label>Cartório</label><input type="radio"><label>Prestador de assistência à saúde</label><input type="radio"><label>Parente</label><input type="radio"><label>Outro</label><input type="radio"><label>Desconhecido</label>
+                    </div>
+                </div>
+                <div>
+                    <h3>Raça/cor</h3>
+                    <input type="checkbox"><label>Branca</label>
+                    <input type="checkbox"><label>Preta</label>
+                    <input type="checkbox"><label>Parda</label>
+                    <input type="checkbox"><label>Amarela</label>
+                    <input type="checkbox"><label>Indígena</label>
+                </div>
+            </div>
             <div>
                 <h3>Sexo</h3>
                 <input type="radio"><label>Masculino (M)</label>
@@ -516,7 +518,7 @@
                 <label>Data Final</label>
                 <input type="date" name="datafinal">
             </div>
-        </div>      
+        </div>
     </div>
     <footer class="footer">
         http://sistemagp.com.br

@@ -1,6 +1,10 @@
-p, h1, h2, a {
+p,
+h1,
+h2,
+a {
     font-family: "Noto Sans", "Noto Sans", serif;
 }
+
 .header {
     background-color: #F1F1F1;
     text-align: center;
@@ -14,11 +18,13 @@ p, h1, h2, a {
     margin: 0;
     padding: 0;
 }
+
 .nav li {
     display: inline-block;
     font-size: 15px;
     padding: 15px;
 }
+
 .footer {
     position: fixed;
     left: 0;
@@ -28,7 +34,9 @@ p, h1, h2, a {
     padding: 10px;
     text-align: center;
 }
+
 a:link {
-    text-decoration:none;
+    text-decoration: none;
 }
 
+.btn {}
