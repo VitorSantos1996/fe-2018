@@ -32,3 +32,8 @@ a:link {
     text-decoration:none;
 }
 
+.pesquisar {
+    background: url(../img/lupa.png) no-repeat;
+    cursor: pointer;
+    border: none;
+}
