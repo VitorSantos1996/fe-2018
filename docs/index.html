@@ -11,42 +11,50 @@
 
 <body>
     <div class="Geral">
-        <div class="container">
-            <div class="box1">
+        
+            <div class="boxg">
                 <header class="header">
-                    <h2>Sistema de gestão de pacientes</h2>
+                    <h1>Sistema de Gestão de Pacientes</h1>
                 </header>
                 <hr>
-                <div>
-                    <ul class="nav">
-                        <li><a href="#identificadores">Identificadores</a></li>
-                        <li><a href="#nomes">Nome</a></li>
-                        <li><a href="#endereços">Endereços</a></li>
-                        <li><a href="#contatos">Contatos eletrônicos</a></li>
-                        <li><a href="#comunicaçõeseletrônicas">Comunicações Eletrônicas</a></li>
-                        <li><a href="#vinculos">Vinculos</a></li>
-                    </ul>
-                </div>
-                <div class="paciente">
-                    <h1>Pesquisar Paciente</h1>
-                    <div class="pesquisa">
-                        <input class="busca" type="search" name="busca">
-                        <button type="submit" name="busca"><img src="../img/lupa2.png" /> </button>
+                    <div>
+                        <ul class="nav">
+                            <li><a href="#identificadores">Identificadores</a></li>
+                            <li><a href="#nomes">Nome</a></li>
+                            <li><a href="#endereços">Endereços</a></li>
+                            <li><a href="#dadosdemograficos">Dados Demograficos</a></li>
+                            <li><a href="#contatos">Contatos eletrônicos</a></li>
+                            <li><a href="#comunicaçõeseletrônicas">Comunicações Eletrônicas</a></li>
+                            <li><a href="#vinculos">Vinculos</a></li>
+                        </ul>
                     </div>
-                    <br><br>
-                    <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro">        
+                <hr>
+            </div>
+
+            <div class="container">            
+                <div class="boxg1">    
+                    <div class="paciente">
+                        <h1>Pesquisar Paciente</h1>
+                        <br>
+                        <div class="pesquisa">
+                            <input class="busca" type="search" name="busca">
+                            <button type="submit" name="busca"><img src="../img/lupa2.png" /> </button>
+                        </div>
+                        <br><br><br><br><br>
+                        <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro" onclick="container1">        
+                    </div>
                 </div>
             </div>
             
-        </div>
-        <!--
-        Identiicadores
         
-        <div class="container1" id="identificadores">
-            <div class="box">
+        
+        <!--Identiicadores-->
+        
+        <div class="containeri">
+            <div class="boxi">
                 <h2>Identificador</h2>
                 <div class="colunn">
-                    <div class="field">
+                    <div>
                         <label>Tipo de identificador</label>
                         <select name="identificador" form="identificadores">
                             <option value="">Identificadores</option>
@@ -55,17 +63,17 @@
                             <option value="CNH">CNH</option>
                         </select>
                     </div>
-                    <div class="field">
+                    <div>
                         <label>Designação</label>
                         <input type="text" name="designacao">
                     </div>
-                    <div class="field">
+                    <div>
                         <label>Emissor</label>
                         <input type="text" name="emissor">
                     </div>
                 </div>
                 <div class="colunn">
-                    <div class="field">
+                    <div>
                         <label>Área Geográfica</label>
                         <input type="text" name="areageo">
                     </div>
@@ -76,7 +84,8 @@
                 </div>
 
             </div>
-            <div class="box">
+            <div class="boxi">
+                <h2>Certidão</h2>
                 <div>
                     <label>Tipo de Certidão</label>
                     <select name="certidao" form="certidao">
@@ -103,7 +112,7 @@
                 </div>
 
             </div>
-            <div class="box">
+            <div class="boxi">
                 <h3>Carteira de Trabalho</h3>
                 <div>
                     <label>Série</label>
@@ -115,7 +124,7 @@
                 </div>
 
             </div>
-            <div class="box">
+            <div class="boxi">
                 <h3>Título de Eleitor</h3>
                 <div>
                     <label>Seção</label>
@@ -127,12 +136,12 @@
                 </div>
             </div>
         </div>
-
-        Nomes
         
-        <div class="container">
+        <!-- Nomes -->
+        
+        <div class="containern">
             <h2>Nomes</h2>
-            <div class="box1">
+            <div class="boxn">
                 <div class="box">
                     <label class="label">Nome:</label>
                     <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
@@ -142,8 +151,7 @@
                     <label class="label">Sobrenome:</label>
                     <input type="text" id="sobrenome" class="input" placeholder="Insira o sobrenome aqui" size="25">
                 </div>
-            </div>
-            <div class="box1">
+            
                 <br>
                 <div class="box">
                     <label class="label">Título:</label>
@@ -154,8 +162,7 @@
                     <label class="label">Sufixo:</label>
                     <input type="text" id="sufixo" class="input" placeholder="Insira o sufixo aqui" size="25">
                 </div>
-            </div>
-            <div class="box1">
+            
                 <br>
                 <label class="label">Uso:</label>
                 <select>
@@ -169,9 +176,9 @@
             </div>
         </div>
         
-        Dados demograficos
+        <!-- Dados demograficos -->
         
-        <div class="container">
+        <div class="containerd">
             <h2>Dados Demográficos</h2>
             <div>
                 <div>
@@ -342,9 +349,9 @@
             </div>
         </div>
         
-        Endereço
+        <!-- Endereço -->
         
-        <div class="container">
+        <div class="containere">
             <h2>Endereços</h2>
             <div>
                 <div>
@@ -449,9 +456,9 @@
             </div>
         </div>
         
-        Comunicações eletronicas
+        <!-- Comunicações eletronicas -->
         
-        <div class="container">
+        <div class="containerc">
             <h2>Comunicações Eletrônicas</h2>
             <div>
                 <label>Meio</label>
@@ -488,10 +495,10 @@
                 </select>
             </div>
         </div>
-
-        Vinculos
         
-        <div class="container">
+        <!-- Vinculos -->
+        
+        <div class="containerv">
             <h2>Vínculos</h2>
             <div>
                 <label>Identificador</label>
@@ -533,11 +540,13 @@
                 <input type="date" name="datafinal">
             </div>
         </div>
-       --> 
+       
+    
+        
     </div>
     <footer class="footer">
-        http://sistemagp.com.br
-    </footer>
+            http://sistemagp.com.br
+        </footer>
 </body>
 
 </html>

@@ -1,19 +1,34 @@
 body{
     background-color: #f2f2f2;
 }
-.container{
 
+.geral{
+    display:block;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    
 }
 
-.box1{
-    position: fixed;
-    height: 70%;
-    width: 98%;
+.boxg{
+    position: relative;
     text-align: center;
 }
 
+.boxg hr{
+    visibility: hidden;
+}
+
+.container{
+    position: absolute;
+    text-align: center;
+    width: 98%;
+    display:inline-block;
+    /* display: none; */
+    text-align:center;
+}
 .header {
-    background-color: #F1F1F1;
+    background-color: #ccc;
     text-align: center;
     padding: 20px;
 }
@@ -25,6 +40,7 @@ body{
     margin: 0;
     padding: 0;
     visibility: hidden;
+    /* visibility: visible; */
 }
 
 .nav li {
@@ -32,6 +48,7 @@ body{
     font-size: 15px;
     padding: 15px;
 }
+
 
 .paciente{
     
@@ -80,12 +97,100 @@ body{
     -o-border-radius: 5px;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #F1F1F1;
-    padding: 10px;
+.containeri{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
     text-align: center;
+    height: 63%;
+    width: 99%;
+}
+
+.boxi{
+    
+    display: inline-block;
+    padding: 5px;
+    width: 24%;
+    height: 42%;
+    
+}
+
+.containern{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    height: 63%;
+    width: 99%;
+    
+}
+
+.boxn{
+
+    display: inline-block;
+    padding: 5px;
+    width: 24%;
+    height: 42%;
+    
+}
+
+.containerd{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    height: 63%;
+    width: 98%;
+    
+}
+
+.containere{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    height: 63%;
+    width: 98%;
+    
+}
+
+.containerc{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    height: 63%;
+    width: 98%;
+    
+}
+
+.containerv{
+    display: none;
+    /* background-color: #59abe3; */
+
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    height: 63%;
+    width: 98%;
+    
+}
+.footer {
+    position: absolute;
+    background-color: #ccc;
+    padding: 10px;
+    bottom: 0;
+    text-align: center;
+    width: 97%;
+    display:inline-block;
+    
 }
