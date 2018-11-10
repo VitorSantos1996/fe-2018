@@ -120,7 +120,7 @@ body{
     padding: 5px;
     width: 350px;
     height: 230px;
-    background-color: #59abe3;
+    /*background-color: #59abe3;*/
     text-align: left;
     margin: 5px;
 }
@@ -165,7 +165,7 @@ body{
     height: 250px;
     width: 390px;
     padding: 5px;
-    background-color: #59abe3;
+    /*background-color: #59abe3;*/
     text-align: left;
 }
 .boxn h2{
@@ -174,7 +174,7 @@ body{
 
 .containerd{
     display: none;
-    /* background-color: #59abe3; */
+     /*background-color: #59abe3; */
 
     position: absolute;
     text-align: center;
@@ -183,7 +183,22 @@ body{
     width: 98%;
     
 }
+.boxgerald{
+    width: 58%;
+    height: 97%;
+    /*background-color: #59abe3;*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.boxd{
+    /*background-color: #59abe3;*/
+    width: 490px;
+    height: 480px;
+    display: inline-block;
+    float: left;
+}
 .dados{
+    display: inline-block;
     text-align: left;
     padding: 5px;
     width: 460px;
@@ -197,23 +212,49 @@ body{
     width: 400px;
 }
 .situacao{
-    position: absolute;
+    margin-top: 25px;
+    display: inline-block;
     width: 460px;
     height: 60px;
 }
 .situacao1{
     margin-top: 5px;
     text-align: left;
-    position: absolute;
     width: 460px;
     height: 25px;
     /*background-color: #59abe3;*/
 }
 .radio{
-    margin-top: 500px;
-    width: 500px;
-    background-color: #59abe3;
+    display: inline-block;
+    width: 460px;
+    text-align: center;
+    /*background-color: #59abe3;*/
 }
+.radio label{text-align: left;}
+.radio h2{
+    text-align: center;
+}
+.data{
+    text-align: right;
+    float: right;
+}
+.fonte{
+    float: right;
+    width: 300px;
+}
+
+.boxd1{
+    width: 490px;
+    height: 480px;
+    display: inline-block;
+    float: left;
+    margin-left: 100px;
+}
+.comentario{
+    width: 450px;
+    height: 100px;
+}
+
 .containere{
     display: none;
     /* background-color: #59abe3; */
@@ -225,6 +266,38 @@ body{
     width: 98%;
     
 }
+
+.boxgerale{
+    width: 60%;
+    height: 97%;
+    /*background-color: #59abe3;*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.iniciadores{
+    width: 805px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.iniciadores2{
+    width: 400px;
+    display: inline-block;
+    
+}
+.iniciadores3{
+    margin-top: 5px;
+    text-align: left;
+    width: 300px;
+    height: 25px;
+    /*background-color: #59abe3;*/
+}
+.iniciadores4{
+    margin-top: 25px;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+}
+
 
 .containerc{
     display: none;

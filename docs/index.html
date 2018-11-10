@@ -95,7 +95,7 @@
                 <div>
                     <div class="idd">
                         <label>Tipo de identificador</label>
-                        <select class="options" name="identificador" form="identificadores">
+                        <select class="options" name="identificador">
                             <option value="">Identificadores</option>
                             <option value="Identidade">Identidade</option>
                             <option value="CPF">CPF</option>
@@ -218,218 +218,115 @@
         
         <div class="containerd">
 
-            <div>
-                <div class="dados">
-                <h2>Dados Demográficos</h2>
-                    <div class="idd">
-                        <label>Mãe</label>
-                        <input class="options" type="text" name="mae">
+            <div class="boxgerald">
+                <div class="boxd">
+                    <div class="dados">
+                    <h2>Dados Demográficos</h2>
+                        <div class="idd">
+                            <label>Mãe</label>
+                            <input class="options" type="text" name="mae">
+                        </div>
+                        <div class="idd">
+                            <label>Pai</label>
+                            <input class="options" type="text" name="pai">
+                        </div>
                     </div>
-                    <div class="idd">
-                        <label>Pai</label>
-                        <input class="options" type="text" name="pai">
+                    <div class="situacao">
+                        <div class="situacao1">
+                            <label>Situação Familiar (convive com)</label>
+                            <select class="options">
+                                <options>Companheiro(a) e Filho(s)</options>
+                                <options>Companheiro(a) com laços conjugais e sem filhos</options>
+                                <options>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</options>                           
+                                <options>Familiar(es) sem Companheiro(a)</options>                            
+                                <options>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</options>                            
+                                <options>Vive só</options>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Data de Nascimento</label>
+                            <input class="options" type="date" name="datanascimento">
+                        </div>                 
+                    </div>
+                    
+                    <div class="radio">
+                        <h2>Indicador de acurácia</h2>
+                        <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                        <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                    </div>
+                    <div class="situacao">
+                        <div class="situacao1">
+                            <label>Seguimento</label>
+                            <input class="data" type="checkbox"><label class="data">Data precisa de seguimento</label>
+                        </div>
+                        <div class="situacao1">
+                            <label>Óbito</label>
+                            <input class="options" type="date">
+                        </div>
+                        <div class="situacao1">
+                            <label>Fonte de notificação</label>
+                            <select class="fonte">
+                                <option>Cartório</option>
+                                <option>Prestador de assistência à saúde</option>
+                                <option>Parente</option>
+                                <option>Outro</option>
+                                <option>Desconhecido</option>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Sexo</label>
+                            <select class="options">
+                                <option>Masculino (M)</option>
+                                <option>Feminino (F)</option>
+                                <option>Intersexoou Indeterminado (I)</option>
+                                <option>Não declarado (U)</option>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Situação Familiar</label>
+                            <select class="options">
+                                    <option value="1">Companheiro(a) e filho(s)</option>
+                                    <option value="2">Companheiro(a) com laços conjugais e sem filhos</option>
+                                    <option value="3">Companheiro(a), com filho(s) e/ou outro(s) familiar(es)</option>
+                                    <option value="4">Familiar(es) sem companheiro(a)</option>
+                                    <option value="5">Outra(s) pessoa(s), sem laços consanguíneos e/ou laços conjugais</option>
+                                    <option value="8">Vive só</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="situacao">
-                    <div class="situacao1">
-                        <label>Situação Familiar (convive com)</label>
-                        <select class="options">
-                            <options>Companheiro(a) e Filho(s)</options>
-                            <options>Companheiro(a) com laços conjugais e sem filhos</options>
-                            <options>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</options>                           
-                            <options>Familiar(es) sem Companheiro(a)</options>                            
-                            <options>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</options>                            
-                            <options>Vive só</options>
-                        </select>
-                    </div>
-                    <div class="situacao1">
-                        <label>Data de Nascimento</label>
-                        <input class="options" type="date" name="datanascimento">
-                    </div>                 
-                </div>
+                    
                 
-                <div class="radio">
-                    <h3>Indicador de acurácia</h3>
-                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                </div>
-                    <div>
-                        <h3>Seguimento</h3>
-                        <input type="checkbox" name=""><label>Data precisa de seguimento</label>
-                    </div>
-                
-                <div>
-                    <div>
-                        <h3>Óbito</h3>
-                        <input type="date">
-                    </div>
+                <div class="boxd1">
+                    
                     <div>
                         <h3>Indicador de acurácia</h3>
                         <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
                         <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
                         <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
                     </div>
-                    <div>
-                        <h3>Fonte de notificação</h3>
-                        <input type="radio"><label>Cartório</label><input type="radio"><label>Prestador de assistência à saúde</label><input type="radio"><label>Parente</label><input type="radio"><label>Outro</label><input type="radio"><label>Desconhecido</label>
-                    </div>
-                </div>
-                <div>
-                    <h3>Raça/cor</h3>
-                    <input type="checkbox"><label>Branca</label>
-                    <input type="checkbox"><label>Preta</label>
-                    <input type="checkbox"><label>Parda</label>
-                    <input type="checkbox"><label>Amarela</label>
-                    <input type="checkbox"><label>Indígena</label>
-                </div>
-            </div>
-            <div>
-                <h3>Sexo</h3>
-                <input type="radio"><label>Masculino (M)</label>
-                <input type="radio"><label>Feminino (F)</label>
-                <input type="radio"><label>Intersexoou Indeterminado (I)</label>
-                <input type="radio"><label>Não declarado (U)</label>
-            </div>
-            <div>
-                <h3>Situação Familiar</h3>
-                <select>
-                        <option value="1">Companheiro(a) e filho(s)</option>
-                        <option value="2">Companheiro(a) com laços conjugais e sem filhos</option>
-                        <option value="3">Companheiro(a), com filho(s) e/ou outro(s) familiar(es)</option>
-                        <option value="4">Familiar(es) sem companheiro(a)</option>
-                        <option value="5">Outra(s) pessoa(s), sem laços consanguíneos e/ou laços conjugais</option>
-                        <option value="8">Vive só</option>
-                </select>
-            </div>
-            <div>
-                <h3>Nacionalidade</h3>
-                <input type="checkbox"><label>Brasileiro</label><input type="checkbox"><label>Estrangeiro</label>
-                <div>
-                    <div>
-                        <h3>Estado de nascimento</h3>
-                        <select onchange="">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="PR">Paraná</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="TO">Tocantins</option>
-                        </select>
-                    </div>
-                    <div>
-                        <h3>Estado (municícios)</h3>
-                        <select>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>País de nascimento</h3>
-                        <select id="paises">
-                        </select>
-                    </div>
-                    <div>
-                        <h3>Data de entrada no Brasil</h3>
-                        <input type="date">
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3>Pluraridade de nascimentos</h3>
-                <select>
-                            <option value="1">Único</option>
-                            <option value="2">Gêmeos</option>
-                            <option value="3">Trigêmeos</option>
-                            <option value="4">Quádruplos</option>
-                            <option value="5">Quíntuplos</option>
-                            <option value="6">Sêxtuplos</option>
-                            <option value="7">Outros</option>
-                            <option value="9" selected>Não declarado</option>
-                </select>
-            </div>
-            <div>
-                <h3>Ordem de Nascimento</h3>
-                <select>
-                        <option value="1">único ou primeiro</option>
-                        <option value="2">segundo</option>
-                        <option value="3">terceiro</option>
-                        <option value="4">quarto</option>
-                        <option value="5">quinto</option>
-                        <option value="6">sexto</option>
-                        <option value="7">outros</option>
-                        <option value="9" selected>não declarado</option>
-                </select>
-            </div>
-            <div>
-                <h3>Comentário de identificação</h3>
-                <textarea placeholder="exemplo: dois pacientes com o mesmo nome. Não é o mesmo que 123456"></textarea>
-            </div>
-            <button class="btn" type="button" onclick="containere();">Próximo</button>
-        </div>
-        
-        <!-- Endereço -->
-        
-        <div class="containere">
-            <h2>Endereços</h2>
-            <div>
-                <div>
-                    <h3>Tipo de endereço</h3>
-                    <select name="tipo">
-                            <option value="1">Comercial</option>
-                            <option value="2">Correio ou postal</option>
-                            <option value="3">Acomodação temporária</option>
-                            <option value="4" selected>Residencial</option>
-                            <option value="8">Sem endereço fixo</option>
-                            <option value="9">Desconhecido/não declarado</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>Data inicial</h3>
-                    <input type="date" name="datainicial">
-                </div>
-                <div>
-                    <h3>Inicador de Acurácia</h3>
-                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                </div>
-                <div>
-                    <h3>Data final</h3>
-                    <input type="date" name="datafinal">
-                </div>
-                <div>
-                    <h3>Inicador de Acurácia</h3>
-                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                </div>
-                <div>
-                    <h3>País</h3>
-                    <input type="checkbox"><label>Brasil</label><input type="checkbox"><label>Outro</label>
-                    <div>
-                        <div>
-                            <h3>Estado de nascimento</h3>
-                            <select onchange="">
+                    <div class="situacao">
+                        <div class="situacao1">
+                            <label>Raça/cor</label>
+                            <select class="options">
+                                <option>Branca</option>
+                                <option>Preta</option>
+                                <option>Parda</option>
+                                <option>Amarela</option>
+                                <option>Indígena</option>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Nacionalidade</label>
+                            <select class="options">
+                                <option>Brasileiro</option>
+                                <option>Estrangeiro</option>
+                            </select/>
+                        </div>
+                        <div class="situacao1">
+                            <label>Estado de nascimento</label>
+                            <select class="options">
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AM">Amazonas</option>
@@ -457,81 +354,221 @@
                                     <option value="TO">Tocantins</option>
                             </select>
                         </div>
-                        <div>
-                            <h3>Estado (municícios)</h3>
-                            <select>
+                        <div class="situacao1">
+                            <label>Estado (municícios)</label>
+                            <select class="options">
                             </select>
                         </div>
+                        <div class="situacao1">
+                            <label>País de nascimento</label>
+                            <select class="options">
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Data de entrada no Brasil</label>
+                            <input class="options" type="date">
+                        </div>
+                        <div class="situacao1">
+                            <label>Pluraridade de nascimentos</label>
+                            <select class="options">
+                                        <option value="1">Único</option>
+                                        <option value="2">Gêmeos</option>
+                                        <option value="3">Trigêmeos</option>
+                                        <option value="4">Quádruplos</option>
+                                        <option value="5">Quíntuplos</option>
+                                        <option value="6">Sêxtuplos</option>
+                                        <option value="7">Outros</option>
+                                        <option value="9" selected>Não declarado</option>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Ordem de Nascimento</label>
+                            <select class="options">
+                                    <option value="1">único ou primeiro</option>
+                                    <option value="2">segundo</option>
+                                    <option value="3">terceiro</option>
+                                    <option value="4">quarto</option>
+                                    <option value="5">quinto</option>
+                                    <option value="6">sexto</option>
+                                    <option value="7">outros</option>
+                                    <option value="9" selected>não declarado</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3>Comentário de identificação</h3>
+                            <textarea class="comentario" placeholder="exemplo: dois pacientes com o mesmo nome. Não é o mesmo que 123456"></textarea>
+                        </div>
                     </div>
-                    <br>
                 </div>
-                <div>
-                    <label>País</label><select></select><br>
-                    <label>Estado</label><select></select><br>
-                    <label>Municícios</label><select></select>
+            </div>
+            
+            <button class="btn" type="button" onclick="containere();">Próximo</button>
+        </div>
+        
+        <!-- Endereço -->
+        
+        <div class="containere">
+            <h2>Endereços</h2>
+            <div class="boxgerale">
+                <div class="situacao">
+                    <div class="situacao1">
+                        <label>Tipo de endereço</label>
+                        <select class="options" name="tipo">
+                                <option value="1">Comercial</option>
+                                <option value="2">Correio ou postal</option>
+                                <option value="3">Acomodação temporária</option>
+                                <option value="4" selected>Residencial</option>
+                                <option value="8">Sem endereço fixo</option>
+                                <option value="9">Desconhecido/não declarado</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <h3>Caixa Postal</h3>
-                    <input type="text">
+                <div class="iniciadores">
+                    <div class="iniciadores2">
+                        <div class="iniciadores4">
+                            <div class="iniciadores3">
+                                <label>Data inicial</label>
+                                <input class="options" type="date" name="datainicial">
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Inicador de Acurácia</h3>
+                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                        </div>
+                    </div>
+                    <div class="iniciadores2">
+                        <div class="iniciadores4">
+                            <div class="iniciadores3">
+                                <label>Data final</label>
+                                <input class="options" type="date" name="datafinal">
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Inicador de Acurácia</h3>
+                            <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                            <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>CEP</h3>
-                    <input type="text"><br>
-                    <label>Exemplo: 12345-678.</label>
-                </div>
-                <div>
-                    <h3>Bairro</h3>
-                    <input type="text">
-                </div>
-                <div>
-                    <h3>Distrito</h3>
-                    <input type="text">
-                </div>
-                <div>
-                    <h3>Endereço</h3>
-                    <input type="text">
+                <div class="situacao">
+                    <div class="situacao1">
+                        <label>País</label>
+                        <select class="options">
+                            <option value="Brasil">Brasil</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                        <div class="situacao1">
+                            <label>Estado de nascimento</label>
+                            <select class="options">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="situacao1">
+                            <label>Estado (municícios)</label>
+                            <select class="options">
+                            </select>
+                        </div>
+                        
+                        
+                    
+                    <!--<div>
+                        <label>País</label><select></select><br>
+                        <label>Estado</label><select></select><br>
+                        <label>Municícios</label><select></select>
+                    </div>-->
+                    <div class="situacao1">
+                        <label>Caixa Postal</label>
+                        <input class="options" type="text">
+                    </div>
+                    <div class="situacao1">
+                        <label>CEP</label>
+                        <input class="options" type="text"><br>
+                    </div>
+                    <div class="situacao1">
+                        <label>Bairro</label>
+                        <input class="options" type="text">
+                    </div>
+                    <div class="situacao1">
+                        <label>Distrito</label>
+                        <input class="options" type="text">
+                    </div>
+                    <div class="situacao1">
+                        <label>Endereço</label>
+                        <input class="options" type="text">
+                    </div>
                 </div>
             </div>
             <button class="btn" type="button" onclick="containerc();">Próximo</button>
         </div>
         
+        
         <!-- Comunicações eletronicas -->
         
         <div class="containerc">
             <h2>Comunicações Eletrônicas</h2>
-            <div>
-                <label>Meio</label>
-                <select name="meio" form="meio">
-                    <option value="telefone"><img>Telefone</option>
-                    <option value="celular"><img>Celular</option>
-                    <option value="fax"><img>Faz</option>
-                    <option value="pager"><img>Pager</option>
-                    <option value="email"><img>Email</option>
-                    <option value="url"><img>Url</option>
-                    <option value="outro"><img>Outro</option>
-                </select>
-            </div>
-            <div>
-                <label>Telefone</label>
-                <input type="text" name="telefone">
-            </div>
-            <div>
-                <label>Preferência</label>
-                <select name="preferencia" form="preferencia">
-                        <option value="comercial">Horário Comercial</option>
-                        <option value="dia">Durante o Dia</option>
-                        <option value="fds">Final de Semana</option>
-                        <option value="qualquer">Qualquer Hora</option>
-                        <option value="noite">Período Noturno</option>
+            <div class="situacao">
+                <div class="situacao1">
+                    <label>Meio</label>
+                    <select class="options" name="meio" >
+                        <option value="telefone"><img>Telefone</option>
+                        <option value="celular"><img>Celular</option>
+                        <option value="fax"><img>Faz</option>
+                        <option value="pager"><img>Pager</option>
+                        <option value="email"><img>Email</option>
+                        <option value="url"><img>Url</option>
+                        <option value="outro"><img>Outro</option>
                     </select>
-            </div>
-            <div>
-                <label>Utilização</label>
-                <select name="utilizacao" form="utilizacao">
-                    <option value="comercial">Comercial</option>
-                    <option value="pessoal">Pessoal</option>
-                    <option value="comercialpessoal">Comercial ou Pessoal</option>
-                </select>
+                </div>
+                <div class="situacao1">
+                    <label>Telefone</label>
+                    <input class="options" type="text" name="telefone">
+                </div>
+                <div class="situacao1">
+                    <label>Preferência</label>
+                    <select class="options" name="preferencia">
+                            <option value="comercial">Horário Comercial</option>
+                            <option value="dia">Durante o Dia</option>
+                            <option value="fds">Final de Semana</option>
+                            <option value="qualquer">Qualquer Hora</option>
+                            <option value="noite">Período Noturno</option>
+                        </select>
+                </div>
+                <div class="situacao1">
+                    <label>Utilização</label>
+                    <select class="options" name="utilizacao">
+                        <option value="comercial">Comercial</option>
+                        <option value="pessoal">Pessoal</option>
+                        <option value="comercialpessoal">Comercial ou Pessoal</option>
+                    </select>
+                </div>
             </div>
             <button class="btn" type="button" onclick="containerv();">Próximo</button>
         </div>
@@ -540,44 +577,46 @@
         
         <div class="containerv">
             <h2>Vínculos</h2>
-            <div>
-                <label>Identificador</label>
-                <input type="text" name="identificador">
-            </div>
-            <div>
-                <label>Relacionamento</label>
-                <select>
-                    <option value="" selected>Avó materna</option>
-                    <option value="">Avô materno</option>
-                    <option value="">Cônjuge/companheiro(a)</option>
-                    <option value="">Irmão</option>
-                    <option value="">Irmã</option>
-                    <option value="">Meio-irmão</option>
-                    <option value="">Meio-irmã</option>
-                    <option value="">Irmãos</option>
-                    <option value="">Criança</option>
-                    <option value="">Filha</option>
-                    <option value="">Avó paterna</option>
-                    <option value="">Avô paterno</option>
-                    <option value="">Tio materno</option>
-                    <option value="">Tio paterno</option>
-                    <option value="">Tia paterna</option>
-                    <option value="">Recém-nascido</option>
-                    <option value="">Pais</option>
-                    <option value="">Mãe adotiva</option>
-                    <option value="">Pai adotivo</option>
-                    <option value="">Responsável</option>
-                    <option value="">Coabitante</option>
-                    <option value="">Tia materna</option>
-                    </select>
-            </div>
-            <div>
-                <label>Data Inicial</label>
-                <input type="date" name="datainicial">
-            </div>
-            <div>
-                <label>Data Final</label>
-                <input type="date" name="datafinal">
+            <div class="situacao">
+                <div class="situacao1">
+                    <label>Identificador</label>
+                    <input class="options" type="text" name="identificador">
+                </div>
+                <div class="situacao1">
+                    <label>Relacionamento</label>
+                    <select class="options">
+                        <option value="" selected>Avó materna</option>
+                        <option value="">Avô materno</option>
+                        <option value="">Cônjuge/companheiro(a)</option>
+                        <option value="">Irmão</option>
+                        <option value="">Irmã</option>
+                        <option value="">Meio-irmão</option>
+                        <option value="">Meio-irmã</option>
+                        <option value="">Irmãos</option>
+                        <option value="">Criança</option>
+                        <option value="">Filha</option>
+                        <option value="">Avó paterna</option>
+                        <option value="">Avô paterno</option>
+                        <option value="">Tio materno</option>
+                        <option value="">Tio paterno</option>
+                        <option value="">Tia paterna</option>
+                        <option value="">Recém-nascido</option>
+                        <option value="">Pais</option>
+                        <option value="">Mãe adotiva</option>
+                        <option value="">Pai adotivo</option>
+                        <option value="">Responsável</option>
+                        <option value="">Coabitante</option>
+                        <option value="">Tia materna</option>
+                        </select>
+                </div>
+                <div class="situacao1">
+                    <label>Data Inicial</label>
+                    <input class="options" type="date" name="datainicial">
+                </div>
+                <div class="situacao1">
+                    <label>Data Final</label>
+                    <input class="options" type="date" name="datafinal">
+                </div>
             </div>
             <button class="btn" type="button" onclick="finalizar();">Finalizar</button>
         </div>
