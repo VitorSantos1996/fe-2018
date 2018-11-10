@@ -219,50 +219,46 @@
         <div class="containerd">
 
             <div>
+                <div class="dados">
                 <h2>Dados Demográficos</h2>
-                <div>
-                    <div>
+                    <div class="idd">
                         <label>Mãe</label>
-                        <input class="options"type="text" name="mae">
+                        <input class="options" type="text" name="mae">
                     </div>
-                    <div>
+                    <div class="idd">
                         <label>Pai</label>
                         <input class="options" type="text" name="pai">
                     </div>
                 </div>
-                <div>
-                    <h3>Situação Familiar (convive com)</h3>
-                    <div>
-                        <input type="checkbox"><label>Companheiro(a) e Filho(s)</label>
-                        <br>
-                        <input type="checkbox"><label>Companheiro(a) com laços conjugais e sem filhos</label>
-                        <br>
-                        <input type="checkbox"><label>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</label>
-                        <br>
-                        <input type="checkbox"><label>Familiar(es) sem Companheiro(a)</label>
-                        <br>
-                        <input type="checkbox"><label>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</label>
-                        <br>
-                        <input type="checkbox"><label>Vive só</label>
-                        <br>
+                <div class="situacao">
+                    <div class="situacao1">
+                        <label>Situação Familiar (convive com)</label>
+                        <select class="options">
+                            <options>Companheiro(a) e Filho(s)</options>
+                            <options>Companheiro(a) com laços conjugais e sem filhos</options>
+                            <options>Companheiro(a), com Filho(s) e/ou outro(s) familiar(es)</options>                           
+                            <options>Familiar(es) sem Companheiro(a)</options>                            
+                            <options>Outra(s) pessoa(s) sem laços consaguíneos e/ou laços conjugais</options>                            
+                            <options>Vive só</options>
+                        </select>
                     </div>
+                    <div class="situacao1">
+                        <label>Data de Nascimento</label>
+                        <input class="options" type="date" name="datanascimento">
+                    </div>                 
                 </div>
-                <div>
-                    <div>
-                        <h3>Data de Nascimento</h3>
-                        <input type="date" name="datanascimento">
-                    </div>
-                    <div>
-                        <h3>Indicador de acurácia</h3>
-                        <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                        <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
-                        <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
-                    </div>
+                
+                <div class="radio">
+                    <h3>Indicador de acurácia</h3>
+                    <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Mês:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
+                    <label>Ano:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label>
+                </div>
                     <div>
                         <h3>Seguimento</h3>
                         <input type="checkbox" name=""><label>Data precisa de seguimento</label>
                     </div>
-                </div>
+                
                 <div>
                     <div>
                         <h3>Óbito</h3>

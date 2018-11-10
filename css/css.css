@@ -183,7 +183,37 @@ body{
     width: 98%;
     
 }
-
+.dados{
+    text-align: left;
+    padding: 5px;
+    width: 460px;
+    height: 120px;
+    /*background-color: blue;*/
+}
+.dados h2{
+    text-align: center;
+}
+.dados input{
+    width: 400px;
+}
+.situacao{
+    position: absolute;
+    width: 460px;
+    height: 60px;
+}
+.situacao1{
+    margin-top: 5px;
+    text-align: left;
+    position: absolute;
+    width: 460px;
+    height: 25px;
+    /*background-color: #59abe3;*/
+}
+.radio{
+    margin-top: 500px;
+    width: 500px;
+    background-color: #59abe3;
+}
 .containere{
     display: none;
     /* background-color: #59abe3; */
