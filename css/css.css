@@ -1,5 +1,9 @@
+/* *, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+html {overflow-x: hidden} */
 body{
     background-color: #f2f2f2;
+    width: 99%;
+    height: 99%;
 }
 
 .geral{
@@ -101,22 +105,42 @@ body{
 .containeri{
     display: none;
     /* background-color: #59abe3; */
-
+    left:20%;
     position: absolute;
     text-align: center;
-    height: 63%;
-    width: 99%;
+    height: 500px;
+    width: 800px;
+    
 }
 
 .boxi{
     
     display: inline-block;
     padding: 5px;
-    width: 24%;
-    height: 42%;
-    
+    width: 350px;
+    height: 230px;
+    background-color: #59abe3;
+    text-align: left;
+    margin: 5px;
 }
 
+.boxi h2{
+    text-align: center;
+}
+.idd{
+    height: 30px;
+    
+}
+.options{
+    float: right;
+    width: 200px;
+}
+
+.btn{
+    position: absolute;
+    float: right;
+    top: 100%;
+}
 .containern{
     display: none;
     /* background-color: #59abe3; */
@@ -189,9 +213,9 @@ body{
     position: absolute;
     background-color: #ccc;
     padding: 10px;
-    bottom: 0;
     text-align: center;
+    top: 100%;
     width: 97%;
-    display:inline-block;
+    display:block;
     
 }

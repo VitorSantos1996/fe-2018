@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/css.css">
+
+    <script>
+        function container1() {
+            document.getElementsByClassName("hr")[0].style.visibility = "visible";
+            document.getElementsByClassName("hr")[1].style.visibility = "visible";
+            document.getElementsByClassName("container")[0].style.display = "none";
+            document.getElementsByClassName("nav")[0].style.visibility = "visible";
+            document.getElementsByClassName("containeri")[0].style.display = "inline-block";
+        }
+    </script>   
+
 </head>
 
 <body>
@@ -16,7 +27,7 @@
                 <header class="header">
                     <h1>Sistema de Gestão de Pacientes</h1>
                 </header>
-                <hr>
+                <hr class="hr">
                     <div>
                         <ul class="nav">
                             <li><a href="#identificadores">Identificadores</a></li>
@@ -28,7 +39,7 @@
                             <li><a href="#vinculos">Vinculos</a></li>
                         </ul>
                     </div>
-                <hr>
+                <hr class="hr">
             </div>
 
             <div class="container">            
@@ -41,7 +52,7 @@
                             <button type="submit" name="busca"><img src="../img/lupa2.png" /> </button>
                         </div>
                         <br><br><br><br><br>
-                        <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro" onclick="container1">        
+                        <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro" onclick="container1();">        
                     </div>
                 </div>
             </div>
@@ -53,88 +64,86 @@
         <div class="containeri">
             <div class="boxi">
                 <h2>Identificador</h2>
-                <div class="colunn">
-                    <div>
+                <div>
+                    <div class="idd">
                         <label>Tipo de identificador</label>
-                        <select name="identificador" form="identificadores">
+                        <select class="options" name="identificador" form="identificadores">
                             <option value="">Identificadores</option>
                             <option value="Identidade">Identidade</option>
                             <option value="CPF">CPF</option>
                             <option value="CNH">CNH</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="idd">
                         <label>Designação</label>
-                        <input type="text" name="designacao">
+                        <input class="options" type="text" name="designacao">
                     </div>
-                    <div>
+                    <div class="idd">
                         <label>Emissor</label>
-                        <input type="text" name="emissor">
+                        <input class="options" type="text" name="emissor">
                     </div>
-                </div>
-                <div class="colunn">
-                    <div>
+                    <div class="idd">
                         <label>Área Geográfica</label>
-                        <input type="text" name="areageo">
+                        <input class="options" type="text" name="areageo">
                     </div>
-                    <div>
+                    <div class="idd">
                         <label>Data</label>
-                        <input type="date" name="data">
+                        <input class="options" type="date" name="data">
                     </div>
                 </div>
 
             </div>
             <div class="boxi">
                 <h2>Certidão</h2>
-                <div>
+                <div class="idd">
                     <label>Tipo de Certidão</label>
-                    <select name="certidao" form="certidao">
+                    <select class="options" name="certidao" form="certidao">
                         <option value="nascimento">Nascimento</option>
                         <option value="casamento">Casamento</option>
                         <option value="Divorcio">Divórcio</option>
                     </select>
                 </div>
-                <div>
+                <div class="idd">
                     <label>Nome do Cartório</label>
-                    <input type="text" name="cartorio">
+                    <input class="options" type="text" name="cartorio">
                 </div>
-                <div>
+                <div class="idd">
                     <label>Livro</label>
-                    <input type="text" name="livro">
+                    <input class="options" type="text" name="livro">
                 </div>
-                <div>
+                <div class="idd">
                     <label>Folha</label>
-                    <input type="text" name="folha">
+                    <input class="options" type="text" name="folha">
                 </div>
-                <div>
+                <div class="idd">
                     <label>Termo</label>
-                    <input type="text" name="termo">
+                    <input class="options" type="text" name="termo">
                 </div>
 
             </div>
             <div class="boxi">
-                <h3>Carteira de Trabalho</h3>
-                <div>
+                <h2>Carteira de Trabalho</h2>
+                <div class="idd">
                     <label>Série</label>
-                    <input type="text" name="serie">
+                    <input class="options" type="text" name="serie">
                 </div>
-                <div>
+                <div class="idd">
                     <label>Estado</label>
-                    <input type="text" name="estado">
+                    <input class="options" type="text" name="estado">
                 </div>
-
             </div>
             <div class="boxi">
-                <h3>Título de Eleitor</h3>
-                <div>
+                <h2>Título de Eleitor</h2>
+                <div class="idd">
                     <label>Seção</label>
-                    <input type="text" name="secao">
+                    <input class="options" type="text" name="secao">
                 </div>
-                <div>
+                <div class="idd">
                     <label>Zona</label>
-                    <input type="text" name="zona">
+                    <input class="options" type="text" name="zona">
                 </div>
             </div>
+            <button class="btn" type="button">Próximo</button>
         </div>
         
         <!-- Nomes -->
