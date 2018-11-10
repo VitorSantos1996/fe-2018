@@ -16,6 +16,34 @@
             document.getElementsByClassName("nav")[0].style.visibility = "visible";
             document.getElementsByClassName("containeri")[0].style.display = "inline-block";
         }
+        function containern(){
+            document.getElementsByClassName("containeri")[0].style.display = "none";
+            document.getElementsByClassName("containern")[0].style.display = "inline-block";
+        }
+        function containerd(){
+            document.getElementsByClassName("containern")[0].style.display = "none";
+            document.getElementsByClassName("containerd")[0].style.display = "inline-block";
+        }
+        function containere(){
+            document.getElementsByClassName("containerd")[0].style.display = "none";
+            document.getElementsByClassName("containere")[0].style.display = "inline-block";
+        }
+        function containerc(){
+            document.getElementsByClassName("containere")[0].style.display = "none";
+            document.getElementsByClassName("containerc")[0].style.display = "inline-block";
+        }
+        function containerv(){
+            document.getElementsByClassName("containerc")[0].style.display = "none";
+            document.getElementsByClassName("containerv")[0].style.display = "inline-block";
+        }
+        function finalizar() {
+            document.getElementsByClassName("containerv")[0].style.display = "none";
+            document.getElementsByClassName("hr")[0].style.visibility = "hidden";
+            document.getElementsByClassName("hr")[1].style.visibility = "hidden";
+            document.getElementsByClassName("container")[0].style.display = "inline-block";
+            document.getElementsByClassName("nav")[0].style.visibility = "hidden";
+            document.getElementsByClassName("containeri")[0].style.display = "none";
+        }
     </script>   
 
 </head>
@@ -143,38 +171,38 @@
                     <input class="options" type="text" name="zona">
                 </div>
             </div>
-            <button class="btn" type="button">Próximo</button>
+            <button class="btn" type="button" onclick="containern();">Próximo</button>
         </div>
         
         <!-- Nomes -->
         
         <div class="containern">
-            <h2>Nomes</h2>
             <div class="boxn">
-                <div class="box">
-                    <label class="label">Nome:</label>
-                    <input type="text" id="nome" class="input" placeholder="Insira o nome aqui" size="25">
+                <h2>Nomes</h2>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" id="nome" class="options" placeholder="Insira o nome aqui" size="25">
                 </div>
                 <br>
-                <div class="box">
-                    <label class="label">Sobrenome:</label>
-                    <input type="text" id="sobrenome" class="input" placeholder="Insira o sobrenome aqui" size="25">
-                </div>
-            
-                <br>
-                <div class="box">
-                    <label class="label">Título:</label>
-                    <input type="text" id="titulo" class="input" placeholder="Insira o título aqui" size="25">
-                </div>
-                <br>
-                <div class="box">
-                    <label class="label">Sufixo:</label>
-                    <input type="text" id="sufixo" class="input" placeholder="Insira o sufixo aqui" size="25">
+                <div>
+                    <label>Sobrenome:</label>
+                    <input type="text" id="sobrenome" class="options" placeholder="Insira o sobrenome aqui" size="25">
                 </div>
             
                 <br>
-                <label class="label">Uso:</label>
-                <select>
+                <div>
+                    <label>Título:</label>
+                    <input type="text" id="titulo" class="options" placeholder="Insira o título aqui" size="25">
+                </div>
+                <br>
+                <div>
+                    <label>Sufixo:</label>
+                    <input type="text" id="sufixo" class="options" placeholder="Insira o sufixo aqui" size="25">
+                </div>
+            
+                <br>
+                <label>Uso:</label>
+                <select class="options">
                         <option value="1">Relatório - R</option>
                         <option value="2">Nome de recém-nascido - N</option>
                         <option value="3">Nome profissional ou comercial - C</option>
@@ -183,20 +211,24 @@
                         <option value="8">Outro nome (alias) - O</option>
                     </select>
             </div>
+            <button class="btn" type="button" onclick="containerd();">Próximo</button>
         </div>
         
         <!-- Dados demograficos -->
         
         <div class="containerd">
-            <h2>Dados Demográficos</h2>
+
             <div>
+                <h2>Dados Demográficos</h2>
                 <div>
-                    <label>Mãe</label>
-                    <input type="text" name="mae">
-                </div>
-                <div>
-                    <label>Pai</label>
-                    <input type="text" name="pai">
+                    <div>
+                        <label>Mãe</label>
+                        <input class="options"type="text" name="mae">
+                    </div>
+                    <div>
+                        <label>Pai</label>
+                        <input class="options" type="text" name="pai">
+                    </div>
                 </div>
                 <div>
                     <h3>Situação Familiar (convive com)</h3>
@@ -356,6 +388,7 @@
                 <h3>Comentário de identificação</h3>
                 <textarea placeholder="exemplo: dois pacientes com o mesmo nome. Não é o mesmo que 123456"></textarea>
             </div>
+            <button class="btn" type="button" onclick="containere();">Próximo</button>
         </div>
         
         <!-- Endereço -->
@@ -463,6 +496,7 @@
                     <input type="text">
                 </div>
             </div>
+            <button class="btn" type="button" onclick="containerc();">Próximo</button>
         </div>
         
         <!-- Comunicações eletronicas -->
@@ -503,6 +537,7 @@
                     <option value="comercialpessoal">Comercial ou Pessoal</option>
                 </select>
             </div>
+            <button class="btn" type="button" onclick="containerv();">Próximo</button>
         </div>
         
         <!-- Vinculos -->
@@ -548,6 +583,7 @@
                 <label>Data Final</label>
                 <input type="date" name="datafinal">
             </div>
+            <button class="btn" type="button" onclick="finalizar();">Finalizar</button>
         </div>
        
     

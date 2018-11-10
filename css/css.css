@@ -105,11 +105,12 @@ body{
 .containeri{
     display: none;
     /* background-color: #59abe3; */
-    left:20%;
+    left:50%;
     position: absolute;
     text-align: center;
     height: 500px;
     width: 800px;
+    transform: translateX(-50%);
     
 }
 
@@ -127,6 +128,9 @@ body{
 .boxi h2{
     text-align: center;
 }
+
+
+
 .idd{
     height: 30px;
     
@@ -143,23 +147,29 @@ body{
 }
 .containern{
     display: none;
-    /* background-color: #59abe3; */
+     /*background-color: #59abe3; */
 
     position: absolute;
     text-align: center;
     text-align:center;
-    height: 63%;
-    width: 99%;
+    height: 250px;
+    width: 390px;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
     
 }
 
 .boxn{
-
     display: inline-block;
+    height: 250px;
+    width: 390px;
     padding: 5px;
-    width: 24%;
-    height: 42%;
-    
+    background-color: #59abe3;
+    text-align: left;
+}
+.boxn h2{
+    text-align: center;
 }
 
 .containerd{
@@ -214,7 +224,7 @@ body{
     background-color: #ccc;
     padding: 10px;
     text-align: center;
-    top: 100%;
+    top: 95%;
     width: 97%;
     display:block;
     
