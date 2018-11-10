@@ -17,6 +17,7 @@ body{
 
 .boxg hr{
     visibility: hidden;
+    /* visibility: visible; */
 }
 
 .container{
