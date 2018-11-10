@@ -8,87 +8,51 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/css.css">
 
-    <script>
-        function container1() {
-            document.getElementsByClassName("hr")[0].style.visibility = "visible";
-            document.getElementsByClassName("hr")[1].style.visibility = "visible";
-            document.getElementsByClassName("container")[0].style.display = "none";
-            document.getElementsByClassName("nav")[0].style.visibility = "visible";
-            document.getElementsByClassName("containeri")[0].style.display = "inline-block";
-        }
-        function containern(){
-            document.getElementsByClassName("containeri")[0].style.display = "none";
-            document.getElementsByClassName("containern")[0].style.display = "inline-block";
-        }
-        function containerd(){
-            document.getElementsByClassName("containern")[0].style.display = "none";
-            document.getElementsByClassName("containerd")[0].style.display = "inline-block";
-        }
-        function containere(){
-            document.getElementsByClassName("containerd")[0].style.display = "none";
-            document.getElementsByClassName("containere")[0].style.display = "inline-block";
-        }
-        function containerc(){
-            document.getElementsByClassName("containere")[0].style.display = "none";
-            document.getElementsByClassName("containerc")[0].style.display = "inline-block";
-        }
-        function containerv(){
-            document.getElementsByClassName("containerc")[0].style.display = "none";
-            document.getElementsByClassName("containerv")[0].style.display = "inline-block";
-        }
-        function finalizar() {
-            document.getElementsByClassName("containerv")[0].style.display = "none";
-            document.getElementsByClassName("hr")[0].style.visibility = "hidden";
-            document.getElementsByClassName("hr")[1].style.visibility = "hidden";
-            document.getElementsByClassName("container")[0].style.display = "inline-block";
-            document.getElementsByClassName("nav")[0].style.visibility = "hidden";
-            document.getElementsByClassName("containeri")[0].style.display = "none";
-        }
-    </script>   
+    <script type="text/javascript" src="js/js.js"></script>
 
 </head>
 
 <body>
     <div class="Geral">
-        
-            <div class="boxg">
-                <header class="header">
-                    <h1>Sistema de Gestão de Pacientes</h1>
-                </header>
-                <hr class="hr">
-                    <div>
-                        <ul class="nav">
-                            <li><a href="#identificadores">Identificadores</a></li>
-                            <li><a href="#nomes">Nome</a></li>
-                            <li><a href="#endereços">Endereços</a></li>
-                            <li><a href="#dadosdemograficos">Dados Demograficos</a></li>
-                            <li><a href="#contatos">Contatos eletrônicos</a></li>
-                            <li><a href="#comunicaçõeseletrônicas">Comunicações Eletrônicas</a></li>
-                            <li><a href="#vinculos">Vinculos</a></li>
-                        </ul>
-                    </div>
-                <hr class="hr">
-            </div>
 
-            <div class="container">            
-                <div class="boxg1">    
-                    <div class="paciente">
-                        <h1>Pesquisar Paciente</h1>
-                        <br>
-                        <div class="pesquisa">
-                            <input class="busca" type="search" name="busca">
-                            <button type="submit" name="busca"><img src="img/lupa2.png" /> </button>
-                        </div>
-                        <br><br><br><br><br>
-                        <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro" onclick="container1();">        
+        <div class="boxg">
+            <header class="header">
+                <h1>Sistema de Gestão de Pacientes</h1>
+            </header>
+            <hr class="hr">
+            <div>
+                <ul class="nav">
+                    <li><a href="#identificadores">Identificadores</a></li>
+                    <li><a href="#nomes">Nome</a></li>
+                    <li><a href="#endereços">Endereços</a></li>
+                    <li><a href="#dadosdemograficos">Dados Demograficos</a></li>
+                    <li><a href="#contatos">Contatos eletrônicos</a></li>
+                    <li><a href="#comunicaçõeseletrônicas">Comunicações Eletrônicas</a></li>
+                    <li><a href="#vinculos">Vinculos</a></li>
+                </ul>
+            </div>
+            <hr class="hr">
+        </div>
+
+        <div class="container">
+            <div class="boxg1">
+                <div class="paciente">
+                    <h1>Pesquisar Paciente</h1>
+                    <br>
+                    <div class="pesquisa">
+                        <input class="busca" type="search" name="busca">
+                        <button type="submit" name="busca"><img src="img/lupa2.png" /> </button>
                     </div>
+                    <br><br><br><br><br>
+                    <input class="newcadastro" type="button" name="criar" value="Criar novo Cadastro" onclick="container1();">
                 </div>
             </div>
-            
-        
-        
+        </div>
+
+
+
         <!--Identiicadores-->
-        
+
         <div class="containeri">
             <div class="boxi">
                 <h2>Identificador</h2>
@@ -173,9 +137,9 @@
             </div>
             <button class="btn" type="button" onclick="containern();">Próximo</button>
         </div>
-        
+
         <!-- Nomes -->
-        
+
         <div class="containern">
             <div class="boxn">
                 <h2>Nomes</h2>
@@ -188,7 +152,7 @@
                     <label>Sobrenome:</label>
                     <input type="text" id="sobrenome" class="options" placeholder="Insira o sobrenome aqui" size="25">
                 </div>
-            
+
                 <br>
                 <div>
                     <label>Título:</label>
@@ -199,7 +163,7 @@
                     <label>Sufixo:</label>
                     <input type="text" id="sufixo" class="options" placeholder="Insira o sufixo aqui" size="25">
                 </div>
-            
+
                 <br>
                 <label>Uso:</label>
                 <select class="options">
@@ -213,15 +177,15 @@
             </div>
             <button class="btn" type="button" onclick="containerd();">Próximo</button>
         </div>
-        
+
         <!-- Dados demograficos -->
-        
+
         <div class="containerd">
 
             <div class="boxgerald">
                 <div class="boxd">
                     <div class="dados">
-                    <h2>Dados Demográficos</h2>
+                        <h2>Dados Demográficos</h2>
                         <div class="idd">
                             <label>Mãe</label>
                             <input class="options" type="text" name="mae">
@@ -246,9 +210,9 @@
                         <div class="situacao1">
                             <label>Data de Nascimento</label>
                             <input class="options" type="date" name="datanascimento">
-                        </div>                 
+                        </div>
                     </div>
-                    
+
                     <div class="radio">
                         <h2>Indicador de acurácia</h2>
                         <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
@@ -296,10 +260,10 @@
                         </div>
                     </div>
                 </div>
-                    
-                
+
+
                 <div class="boxd1">
-                    
+
                     <div>
                         <h3>Indicador de acurácia</h3>
                         <label>Dia:</label><input type="radio"><label>Acurado</label><input type="radio"><label>Estimado</label><input type="radio"><label>Desconhecido</label><br>
@@ -401,12 +365,12 @@
                     </div>
                 </div>
             </div>
-            
+
             <button class="btn" type="button" onclick="containere();">Próximo</button>
         </div>
-        
+
         <!-- Endereço -->
-        
+
         <div class="containere">
             <h2>Endereços</h2>
             <div class="boxgerale">
@@ -461,9 +425,9 @@
                             <option value="outro">Outro</option>
                         </select>
                     </div>
-                        <div class="situacao1">
-                            <label>Estado de nascimento</label>
-                            <select class="options">
+                    <div class="situacao1">
+                        <label>Estado de nascimento</label>
+                        <select class="options">
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AM">Amazonas</option>
@@ -490,15 +454,15 @@
                                     <option value="SP">São Paulo</option>
                                     <option value="TO">Tocantins</option>
                             </select>
-                        </div>
-                        <div class="situacao1">
-                            <label>Estado (municícios)</label>
-                            <select class="options">
+                    </div>
+                    <div class="situacao1">
+                        <label>Estado (municícios)</label>
+                        <select class="options">
                             </select>
-                        </div>
-                        
-                        
-                    
+                    </div>
+
+
+
                     <!--<div>
                         <label>País</label><select></select><br>
                         <label>Estado</label><select></select><br>
@@ -528,16 +492,16 @@
             </div>
             <button class="btn" type="button" onclick="containerc();">Próximo</button>
         </div>
-        
-        
+
+
         <!-- Comunicações eletronicas -->
-        
+
         <div class="containerc">
             <h2>Comunicações Eletrônicas</h2>
             <div class="situacao">
                 <div class="situacao1">
                     <label>Meio</label>
-                    <select class="options" name="meio" >
+                    <select class="options" name="meio">
                         <option value="telefone"><img>Telefone</option>
                         <option value="celular"><img>Celular</option>
                         <option value="fax"><img>Faz</option>
@@ -572,9 +536,9 @@
             </div>
             <button class="btn" type="button" onclick="containerv();">Próximo</button>
         </div>
-        
+
         <!-- Vinculos -->
-        
+
         <div class="containerv">
             <h2>Vínculos</h2>
             <div class="situacao">
@@ -620,13 +584,13 @@
             </div>
             <button class="btn" type="button" onclick="finalizar();">Finalizar</button>
         </div>
-       
-    
-        
+
+
+
     </div>
     <footer class="footer">
-            http://sistemagp.com.br
-        </footer>
+        http://sistemagp.com.br
+    </footer>
 </body>
 
 </html>
